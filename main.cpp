@@ -21,12 +21,12 @@ int main()
 		bar(20+i*60,a[i]*10,60+i*60,150);
 	for(;is_run();delay_fps(60))
 	{
-		setfont(18,0,"å®‹ä½“");
-		outtextxy(250,250,"å†’æ³¡æŽ’åº");
-		outtextxy(250,280,"é€‰æ‹©æŽ’åº");
-		outtextxy(250,310,"æ›´æ–°");
-		outtextxy(250,340,"é‡ç½®");
-		outtextxy(250,370,"é€€å‡º");
+		setfont(18,0,"ËÎÌå");
+		outtextxy(250,250,"Ã°ÅÝÅÅÐò");
+		outtextxy(250,280,"Ñ¡ÔñÅÅÐò");
+		outtextxy(250,310,"¸üÐÂ");
+		outtextxy(250,340,"ÖØÖÃ");
+		outtextxy(250,370,"ÍË³ö");
 		mousepos(&x,&y);
 		while(mousemsg())msg=getmouse();
 		if(x>=250&&x<=322&&y>=250&&y<=270&&msg.is_left())popo(a,10,20,40,20,10,150);

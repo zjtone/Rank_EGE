@@ -1,14 +1,14 @@
-//å†’æ³¡
+//Ã°Åİ
 #include<iostream>
 #include<graphics.h>
 using namespace std;
-//x1è¡¨ç¤ºå¼€å§‹æ—¶çš„èµ·å§‹åæ ‡ï¼Œx2è¡¨ç¤ºæ–¹å—çš„å®½åº¦ï¼Œx3è¡¨ç¤ºæ–¹å—å·¦å³é—´éš”ï¼Œy1è¡¨ç¤ºé•¿åº¦çš„å€æ•°ï¼Œy2è¡¨ç¤ºæ–¹å—ä¸‹æ–¹åæ ‡
+//x1±íÊ¾¿ªÊ¼Ê±µÄÆğÊ¼×ø±ê£¬x2±íÊ¾·½¿éµÄ¿í¶È£¬x3±íÊ¾·½¿é×óÓÒ¼ä¸ô£¬y1±íÊ¾³¤¶ÈµÄ±¶Êı£¬y2±íÊ¾·½¿éÏÂ·½×ø±ê
 //x1=20,x2=40,x3=20,y1=10,y2=150;
 template<typename T>
 int popo(T a[],int n,double x1,double x2,double x3,double y1,double y2)
 {
-	//i,j,kä½œä¸ºæ•°ç»„ä½ç½®æ§åˆ¶çš„å˜é‡
-	//xï¼Œyç”¨æ¥è¡¨ç¤ºæ•°ç»„çš„çŸ©å½¢ä½ç½®å¹³ç§»
+	//i,j,k×÷ÎªÊı×éÎ»ÖÃ¿ØÖÆµÄ±äÁ¿
+	//x£¬yÓÃÀ´±íÊ¾Êı×éµÄ¾ØĞÎÎ»ÖÃÆ½ÒÆ
 	int i,j,k;
 	T temp;
 	double x,y;
@@ -20,7 +20,7 @@ int popo(T a[],int n,double x1,double x2,double x3,double y1,double y2)
 			if(a[j]<a[j+1])
 			{
 				x=j;y=j+1;
-				//åœ¨æœ€åå†å¯¹æ¢ä¸¤ä¸ªæ•°ç»„çš„å€¼
+				//ÔÚ×îºóÔÙ¶Ô»»Á½¸öÊı×éµÄÖµ
 				for(;is_run();delay_fps(60))
 				{
 					cleardevice();
@@ -29,7 +29,7 @@ int popo(T a[],int n,double x1,double x2,double x3,double y1,double y2)
 					else bar(x1+x*(x2+x3),a[j]*y1,(x1+x2)+x*(x2+x3),y2);
 					if(y>=j)bar(x1+y*(x2+x3),a[j+1]*y1,(x1+x2)+y*(x2+x3),y2);
 					else bar(x1+y*(x2+x3),a[j+1]*y1,(x1+x2)+y*(x2+x3),y2);
-					//å¯é€šè¿‡æ”¹å˜xã€yåŠ å‡çš„å€¼çš„å¤§å°æ¥æ§åˆ¶åŠ¨ç”»çš„é€Ÿåº¦
+					//¿ÉÍ¨¹ı¸Ä±äx¡¢y¼Ó¼õµÄÖµµÄ´óĞ¡À´¿ØÖÆ¶¯»­µÄËÙ¶È
 					x+=0.1;
 					y-=0.1;
 
@@ -40,7 +40,7 @@ int popo(T a[],int n,double x1,double x2,double x3,double y1,double y2)
 				}
 				temp=a[j];a[j]=a[j+1];a[j+1]=temp;
 			}
-			//å¯¹ä¸¤ä¸ªè¦æ¯”è¾ƒçš„æ•°æ”¹å˜é¢œè‰²å¹¶ç­‰å¾…ä¸€ä¼šå„¿åå›å¤æ­£å¸¸çŠ¶æ€
+			//¶ÔÁ½¸öÒª±È½ÏµÄÊı¸Ä±äÑÕÉ«²¢µÈ´ıÒ»»á¶ùºó»Ø¸´Õı³£×´Ì¬
 			else 
 			{
 				for(;is_run();delay_fps(60))

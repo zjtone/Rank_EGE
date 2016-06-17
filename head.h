@@ -14,7 +14,7 @@ int update(T a[],int n,double x1,double x2,double x3,double y1,double y2)
 		bar(x1+i*(x2+x3),a[i]*y1,x1+x2+i*(x2+x3),y2);
 	return 0;
 }
-//å°†pæ•°ç»„çš„å€¼ä¸fæ•°ç»„æ¯”è¾ƒå¹¶å°†fæ•°ç»„çš„å€¼ç§»åˆ°ç›¸åº”ä½ç½®ï¼Œä»¥æ­¤è¾¾åˆ°é‡ç½®çš„æ•ˆæœ
+//½«pÊı×éµÄÖµÓëfÊı×é±È½Ï²¢½«fÊı×éµÄÖµÒÆµ½ÏàÓ¦Î»ÖÃ£¬ÒÔ´Ë´ïµ½ÖØÖÃµÄĞ§¹û
 template<typename T>
 int recycle(T a[],int b[],int n,double x1,double x2,double x3,double y1,double y2)
 {
@@ -30,7 +30,7 @@ int recycle(T a[],int b[],int n,double x1,double x2,double x3,double y1,double y
 		{
 			if(b[i]==a[j])
 			{
-				//ä»¥ä¸‹éƒ¨åˆ†ä¸ºé€‰æ‹©æ’åºçš„ä»£ç ç›´æ¥æ‹·è´ï¼Œå¯èƒ½å­˜åœ¨æœªçŸ¥é—®é¢˜
+				//ÒÔÏÂ²¿·ÖÎªÑ¡ÔñÅÅĞòµÄ´úÂëÖ±½Ó¿½±´£¬¿ÉÄÜ´æÔÚÎ´ÖªÎÊÌâ
 				x=j;y=i;
 				temp=a[i];a[i]=a[j];a[j]=temp;
 				for(;is_run();delay_fps((x2+x3)))

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "排序动画_5_修改", "排序动画_5_修改\排序动画_5_修改.vcxproj", "{1435F475-1BE9-4630-B135-97C59A9A1AEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1435F475-1BE9-4630-B135-97C59A9A1AEB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1435F475-1BE9-4630-B135-97C59A9A1AEB}.Debug|Win32.Build.0 = Debug|Win32
+		{1435F475-1BE9-4630-B135-97C59A9A1AEB}.Release|Win32.ActiveCfg = Release|Win32
+		{1435F475-1BE9-4630-B135-97C59A9A1AEB}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

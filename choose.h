@@ -1,8 +1,8 @@
-//é€‰æ‹©
+//Ñ¡Ôñ
 #include<iostream>
 #include<graphics.h>
 using namespace std;
-//x1è¡¨ç¤ºå¼€å§‹æ—¶çš„èµ·å§‹åæ ‡ï¼Œx2è¡¨ç¤ºæ–¹å—çš„å®½åº¦ï¼Œx3è¡¨ç¤ºæ–¹å—å·¦å³é—´éš”ï¼Œy1è¡¨ç¤ºé•¿åº¦çš„å€æ•°ï¼Œy2è¡¨ç¤ºæ–¹å—ä¸‹æ–¹åæ ‡
+//x1±íÊ¾¿ªÊ¼Ê±µÄÆğÊ¼×ø±ê£¬x2±íÊ¾·½¿éµÄ¿í¶È£¬x3±íÊ¾·½¿é×óÓÒ¼ä¸ô£¬y1±íÊ¾³¤¶ÈµÄ±¶Êı£¬y2±íÊ¾·½¿éÏÂ·½×ø±ê
 //x1=20,x2=40,x3=20,y1=10,y2=150;
 template <typename T>
 int choose(T a[],int n,double x1,double x2,double x3,double y1,double y2)
@@ -18,14 +18,14 @@ int choose(T a[],int n,double x1,double x2,double x3,double y1,double y2)
 			if(a[i]>a[j])
 			{
 				y=i;x=j;
-				//å…¶å®æ”¾åœ¨æœ€åé¢å†ä¿®æ”¹å€¼ä¼šæ¯”è¾ƒå¥½
+				//ÆäÊµ·ÅÔÚ×îºóÃæÔÙĞŞ¸ÄÖµ»á±È½ÏºÃ
 				temp=a[i];a[i]=a[j];a[j]=temp;
 				for(;is_run();delay_fps(60))
 				{
 					cleardevice();
 					setfillcolor(GREEN);
-					//è‹¥ç”¨(y!=j)åŠ(x!=i)æ­¤å¤„æ— é™å¾ªç¯ï¼ŒåŸå› æ˜¯doubleçš„è¯¯å·®
-					//ä¿®æ”¹ä¸ºæ¯”è¾ƒå¤§å°åè¯¯å·®ä¸å†å‡ºç°
+					//ÈôÓÃ(y!=j)¼°(x!=i)´Ë´¦ÎŞÏŞÑ­»·£¬Ô­ÒòÊÇdoubleµÄÎó²î
+					//ĞŞ¸ÄÎª±È½Ï´óĞ¡ºóÎó²î²»ÔÙ³öÏÖ
 					if(x>=i)bar(x1+x*(x2+x3),a[i]*y1,x1+x2+x*(x2+x3),y2);
 					else bar(x1+j*(x2+x3),a[i]*y1,x1+x2+j*(x2+x3),y2);
 					if(y<=j)bar(x1+y*(x2+x3),a[j]*y1,x1+x2+y*(x2+x3),y2);
